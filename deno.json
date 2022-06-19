@@ -1,0 +1,7 @@
+{
+  "tasks": {
+    "start": "deno run -A --watch=static/,routes/,islands/ --no-check dev.ts",
+    "twd:watch": "twd -w routes/ islands/ -o static/styles.css"
+  },
+  "importMap": "./import_map.json"
+}

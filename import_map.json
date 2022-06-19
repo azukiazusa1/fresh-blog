@@ -1,0 +1,16 @@
+{
+  "imports": {
+    "@twind": "./util/twind.ts",
+    "@db": "./util/db.ts",
+
+    "$fresh/": "https://raw.githubusercontent.com/lucacasonato/fresh/main/",
+    "twind": "https://esm.sh/twind@0.16.16",
+    "twind/": "https://esm.sh/twind@0.16.16/",
+    "dayjs": "https://esm.sh/dayjs@1.11.3",
+    "dayjs/": "https://esm.sh/dayjs@1.11.3/",
+    "postgress": "https://deno.land/x/postgres@v0.16.1/mod.ts",
+    "dotenv/": "https://deno.land/x/dotenv@v3.2.0/",
+    "marked": "https://esm.sh/marked@4.0.17",
+    "dompurify": "https://esm.sh/dompurify@2.3.8"
+  }
+}
