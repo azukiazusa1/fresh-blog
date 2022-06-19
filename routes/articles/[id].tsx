@@ -6,7 +6,7 @@ import { tw } from "@twind";
 import { Article, findArticleById } from "@db";
 import dayjs from "dayjs";
 import { marked } from "marked";
-import DOMPurify from "dompurify";
+import sanitize from "sanitize-html";
 
 interface Data {
   article: Article;
@@ -23,7 +23,7 @@ export const handler: Handlers<Data | null> = {
     }
 
     const parsed = marked(article.content);
-    const parsedContent = DOMPurify.sanitize(parsed);
+    const parsedContent = sanitize(parsed);
 
     return ctx.render({
       article,
