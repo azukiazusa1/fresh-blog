@@ -38,8 +38,12 @@ export const handler: Handlers<Data> = {
 
     await createArticle(article);
 
-    const url = new URL(req.url);
-    return Response.redirect(url.origin + "/");
+    return new Response("", {
+      status: 303,
+      headers: {
+        Location: "/",
+      },
+    });
   },
 };
 
