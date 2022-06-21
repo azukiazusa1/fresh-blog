@@ -11,7 +11,7 @@ https://zenn.dev/azukiazusa/articles/fresh-tutorial
 
 - [Deno](https://deno.land/) version 1.23.0 or higher
 
-This application uses postgres. Therefore, please create an .env file and set the following environment variables
+This application uses postgres. so, you need to create `.env` file and set the following environment variables.
 
 - `DB_USER`
 - `POSTGRES_DB`
